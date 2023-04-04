@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def main(request):
-    return render(request, 'main_page/main.html')
+def main_page(request):
+    return render(request, 'main_page/main_page.html')
