@@ -1,6 +1,6 @@
 ## 목차
-1. [프로젝트 주제] (#1._프로젝트_주제)
-2. [usecase diagram] (#2._usecase_diagram)
+1. [프로젝트 주제](#1._프로젝트_주제)
+2. [usecase diagram](#2._usecase_diagram)
 
 
 ---
