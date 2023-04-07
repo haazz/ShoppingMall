@@ -15,8 +15,8 @@ class Product(models.Model):
     title = models.CharField(max_length=30)
     content = models.TextField()
 
-    head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
-
+    head_image = models.ImageField(upload_to='product/images/%Y/%m/%d/', blank=True)
+    category = models.ForeignKey(Category, null=False, blank=False, on_delete=models.CASCADE)
     def __str__(self):
         return f'[{self.pk}] {self.title}'
     def get_absolute_url(self):
