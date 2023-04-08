@@ -1,11 +1,12 @@
 {% extends "product/base.html" %}
 {% block content %}
     {% for product in product_list %}
+        <h2>{{ product.title }}</h2>
+        <a href="{{ product.get_absolute_url }}">detail</a>
         {% if product.head_image %}
             <img class="card-img-top" src="{{ product.head_image.url }}" alt="{{ product }} head image">
         {% else %}
             <img class="card-img-top" src="http://picsum.photos/800/200" alt="random_images">
         {% endif %}
-        <h1>{{ product.title }}</h1>
     {% endfor %}
 {% endblock %}

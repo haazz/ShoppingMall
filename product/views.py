@@ -5,6 +5,7 @@ from .models import Product, Category
 class ProdcutDetail(DetailView):
     model = Product
 
+
 class ProductList(ListView):
     model = Product
     ordering = '-pk'
