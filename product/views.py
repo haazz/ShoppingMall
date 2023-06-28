@@ -20,6 +20,7 @@ class ProductCreate(CreateView):
     model = Product
     fields = ['title', 'hook_text', 'content', 'head_image', 'category',]
 
+"""
     def test_func(self):
         return self.request.user.is_superuser or self.request.user.is_staff
     def form_valid(self, form):
@@ -28,8 +29,7 @@ class ProductCreate(CreateView):
             return super(ProductCreate, self).form_valid(form)
         else:
             return (redirect('/product/'))
-
-
+"""
 
 def categories_page(request, slug):
     category = Category.objects.get(slug=slug)
