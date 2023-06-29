@@ -109,8 +109,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-.env.dev/
-.env.prod.db/
 
 
 # Spyder project settings
@@ -136,3 +134,7 @@ dmypy.json
 
 # Django files
 migrations/
+
+.env.prod
+.env.prod.db
+.env.dev
